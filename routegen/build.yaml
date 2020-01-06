@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      routegen:routegen:
+        enabled: true
+
+builders:
+  routegen:
+    target: ":routegen"
+    import: "package:routegen/gens/builder.dart"
+    builder_factories: ["routeGen"]
+    build_extensions: {".dart": [".route.dart"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]

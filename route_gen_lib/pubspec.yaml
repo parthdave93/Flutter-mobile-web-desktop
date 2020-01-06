@@ -1,0 +1,13 @@
+name: route_gen_lib
+description: Generate routes for flutter.
+version: 1.0.0
+author: Parth Dave <parth.dave93@gmail.com>
+homepage: https://github.com/parthdave93
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
+
+dependencies:
+
+dev_dependencies:
+  test: 1.3.4
