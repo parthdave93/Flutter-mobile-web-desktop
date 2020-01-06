@@ -1,10 +1,9 @@
-import 'package:flutter_web/material.dart';
-import 'package:flutter_web_ui/ui.dart' as ui;
+import 'package:flutter/material.dart';
 import 'home_page.dart';
 
 void main() async{
   print("app main");
-  await ui.webOnlyInitializePlatform();
+  WidgetsFlutterBinding.ensureInitialized();
   print("init started main");
   runApp(MyApp());
 }
